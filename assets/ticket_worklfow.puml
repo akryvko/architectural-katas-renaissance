@@ -1,0 +1,38 @@
+@startuml Ticket flow
+
+state "Ticket created" as created
+
+state expert_available <<choice>>
+state expert_accepted <<choice>>
+state deadline_met <<choice>>
+
+state "Ticket assigned" as assigned
+state "Expert notified" as notified
+state "Assignment accepted" as accepted
+state "Escalated to manager" as escalated
+state "Ticket completed" as completed
+state "Survey sent" as survey_sent
+
+
+[*] --> created
+created --> expert_available
+
+expert_available --> assigned
+expert_available --> escalated: [no available experts]
+
+assigned --> notified
+
+notified --> expert_accepted
+expert_accepted --> accepted :[Accepted]
+expert_accepted --> created : [Rejected]
+
+accepted --> deadline_met
+deadline_met --> escalated: [Deadline failed]
+
+accepted --> completed
+
+completed --> survey_sent
+
+survey_sent --> [*]
+
+@enduml
