@@ -13,26 +13,29 @@ state "Escalated to manager" as escalated
 state "Ticket completed" as completed
 state "Survey sent" as survey_sent
 
-
 [*] --> created
 created --> expert_available
 
-expert_available --> assigned
-expert_available --> escalated: [no available experts]
+expert_available --> assigned : [exper found]
+expert_available -[#red]-> escalated: [no available experts]
 
 assigned --> notified
 
 notified --> expert_accepted
-expert_accepted --> accepted :[Accepted]
-expert_accepted --> created : [Rejected]
+expert_accepted -[#green]-> accepted :[Accepted]
+expert_accepted -[#red]-> created : [Rejected, timeout]
 
 accepted --> deadline_met
-deadline_met --> escalated: [Deadline failed]
+deadline_met -[#red]-> escalated: [Deadline failed]
+
+escalated --> created: Reopened
 
 accepted --> completed
 
 completed --> survey_sent
 
 survey_sent --> [*]
+
+' note left of escalated: Manual control happens here
 
 @enduml
