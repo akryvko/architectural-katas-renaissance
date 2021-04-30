@@ -1,4 +1,9 @@
-# Team
+# Meet the Team
+
+We are a team of 3 Software Engineers working together for a big european fashion platform.  
+We have to make architectural decisions in our daily work and want to be better on this field.
+
+![team](./assets/r_team.png)
 
 # Analysis
 
