@@ -11,6 +11,7 @@ We have to make architectural decisions in our daily work and want to be better 
 
 [Software system characteristics](docs/system_characteristics.md)
 
+[Actor Actions Diagram](diagrams/1_actor_action.md)
 
 # Architectural Decision Records
 
