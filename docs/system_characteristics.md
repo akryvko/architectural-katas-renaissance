@@ -1,6 +1,7 @@
 # Software system characteristics
 Here we define the most important characteristics of the target system. Some of them are architecturally significant so influence architectural decisions, others we will fulfill using other ways, e.g. software design and engineering practices.
-##Architecturally significant characteristics
+
+## Architecturally significant characteristics
 
 | Characteristic | Motivation. Why? |
 |---|---|
