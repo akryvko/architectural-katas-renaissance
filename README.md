@@ -3,7 +3,7 @@
 We are a team of 3 Software Engineers working together for a big European fashion platform.  
 We have to make architectural decisions in our daily work and want to be better on this field.
 
-![team](./assets/r_team.png?v=3)
+![team](./assets/r_team.png?v=4)
 
 # Narrative
 As the new Sysop Squads Software Architects, we have been presented with a system, that is currently live and serving real users. This system has certain properties and certian problems. Our job is to help solve those problems in the best way possible.
