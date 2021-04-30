@@ -3,13 +3,13 @@
 We are a team of 3 Software Engineers working together for a big European fashion platform.  
 We have to make architectural decisions in our daily work and want to be better on this field.
 
-![team](./assets/r_team.png)
+![team](./assets/r_team.png?v=2)
 
 # Narrative
 As the new Sysop Squads Software Architects, we have been presented with a system, that is currently live and serving real users. This system has certain properties and certian problems. Our job is to help solve those problems in the best way possible.
 
 To do this we first tried to understand what is expected out of the system, who will use it and for what. We created [User stories](docs/user_stories.md). 
-We also looked at the issues which the team is facing currently ([Existing problems]). We then tried to identify the architectural requirements for the system ([Software system characteristics](docs/system_characteristics.md)).
+We also looked at the issues which the team is facing currently ([Existing problems](./docs/problems.md)). We then tried to identify the architectural requirements for the system ([Software system characteristics](docs/system_characteristics.md)).
 
 Having done this analysis, we tried to identify components that could serve our user stories, coming up with [Actor Actions Diagram](diagrams/1_actor_action.md).
 We then tried to club some components, and tried to come up with a domain driven coarse grained service diagram with user interface interaction [diagram]. [Use case diagrams] for each of our main actors also helped us to see how these would be used, and if each of these service provide the non-functional requirements for the use cases it supports. We also defined interactions between components [diagram] to check the if the level of granularity is not too much. 
