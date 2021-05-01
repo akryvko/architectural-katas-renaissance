@@ -16,4 +16,3 @@ We tolerate multi-tenancy and other implications of cloud based solutions.
 
 
 ![aws](https://jsconsulting.services/wp-content/uploads/2018/05/AWS-Logo-small.jpg)
-![k8s](https://www.stratoscale.com/wp-content/uploads/2019/04/Kubernetes-logo.png)
