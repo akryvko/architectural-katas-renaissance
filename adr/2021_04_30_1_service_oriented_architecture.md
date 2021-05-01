@@ -1,7 +1,7 @@
 # Use of service oriented architecture
 ## Status
 Accepted
-##Context
+## Context
 The current system is a modularised monolith system with all components in a single deployable service. 
 This structure would have probably been chosen for its simplicity and cost efficiency.
 
