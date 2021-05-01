@@ -35,6 +35,7 @@ Now, we had an idea of what our preferable end sytem looked like. What was left 
 
 [Use 3d party Knowledge Base tool](adr/2021_04_28_1_kb_tool.md)
 
+[Cloud based deployment](adr/2021_05_01_cloud_provider.md)
 
 # Logical view
 
