@@ -2,7 +2,8 @@
 ## Status
 Proposed
 ## Context
-* There is a certain [workflow]((../assets/ticket_worklfow.puml)) associated with tickets. 
+![workflow](../assets/ticket_worklfow.puml) 
+* There is a certain [workflow](../assets/ticket_worklfow.puml) associated with tickets. 
 * This workflow has many decision points. 
 * It can also evolve over time.
 * The different stages of a particular ticket needs to be visible to various stakeholders of the system for various business operations.
