@@ -1,0 +1,73 @@
+@startuml Architecture
+folder ActorManagement {
+    component customer
+    component expert
+    component admin
+    component manager
+    database actorDB
+}
+
+folder ObjectManagement {
+    component ticket
+    component contract
+    component refdata
+    database objectDB
+}
+
+folder WorkflowManagement {
+    component contractWorkflow
+    component ticketWorkflow
+    database workflowDB
+}
+
+folder TicketAssignmentManager {
+    component autoAssigner
+    component manualAssigner
+    database expertDataCache
+}
+
+folder PaymentManager {
+    component paymentGateway
+    component paymentDetailsStore
+    database sessionCache
+}
+
+folder NotificationService {
+    component notificationSceduler
+    component notificationSender
+    database notificationSchedule
+}
+
+folder KnowledgeBaseManager {
+    component kbStore
+    component kbRetrieve
+    database knowledgeBaseDB
+}
+
+folder SurveyManager {
+    component surveyCreator
+    component surveyResponseManagement
+    database surveyDB
+}
+
+folder BusinessIntelligenceSolution {
+    component biUI
+    component biStore
+    database dataWarehouse
+}
+
+contractWorkflow -up-> contract
+contractWorkflow -up-> ticket
+contractWorkflow -up-> refdata
+contractWorkflow -up-> customer
+contractWorkflow -down-> paymentGateway
+
+ticketWorkflow -> ticket
+ticketWorkflow -> contract
+ticketWorkflow -> expert
+ticketWorkflow -down-> surveyCreator
+ticketWorkflow -left-> kbRetrieve
+ticketWorkflow ---> notificationSender
+
+
+@enduml
