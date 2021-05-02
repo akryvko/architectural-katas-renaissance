@@ -1,7 +1,7 @@
-# Use of service oriented architecture
+# Use of service based architecture
 ## Status
 Accepted
-##Context
+## Context
 The current system is a modularised monolith system with all components in a single deployable service. 
 This structure would have probably been chosen for its simplicity and cost efficiency.
 
@@ -12,7 +12,7 @@ This monolith structure is however causing the following business impact:
 * Same service and database is used for different kinds of requirements 
   i.e. for reporting and real-time transactions. This causes issues in both functionalities.
 
-The new architecture should have these [properties](../docs/3_system_characteristics.md)
+The new architecture should have these [properties](../docs/system_characteristics.md)
 
 ## Decision
 We see that different parts of the system have different architectural requirements.
@@ -31,24 +31,24 @@ when needed and in the format that is needed for analysis.
   We should be able to identify what the issue is when it occurs.
 
 This makes it clear that we need to break the monolith. 
-The communication between these modules is needed to be both synchronous and asynchronous 
+The communication between these modules needs to be both synchronous and asynchronous 
 as seen ![below](../assets/8_component_interaction_diagram.png)
 Referring to the available architectural principles and a comparison between them, 
 shows us that we have two candidates that fulfil the above requirement : 
-*service oriented* and *microservice architecture*.
-![SOA](../assets/7_architecture_style_comparison.png)
+*service based* and *microservice architecture*.
+![SBA](../assets/7_architecture_style_comparison.png)
 
-Both Microservice architecture and Service-oriented architecture give us similar architectural benefits.
-However, we decided to chose Service oriented architecture because: 
+Both Microservice architecture and Service based architecture give us similar architectural benefits.
+However, we decided to chose Service based architecture because: 
 * We believe that for the current (and the near future) requirements 
-  we do not need the high granularity and scalability which microservice offer over SOA.
+  we do not need the high granularity and scalability which microservice offer over Service based.
 * Moreover, Microservice architecture requires a devops maturity which 
   a team handling monolith service might lack.
-* Choosing SOA also allows us to migrate in steps where we can first move the module to a separate service 
-  but let the data remain untouched. 
+* Choosing Service based Architecture also allows us to migrate in steps where we can first move the module to a separate service 
+  but let the database remain untouched. 
 * This will also help us start solving the burning issues even before 
   we reach the final goal.
-* Having an SOA now will also prove to be a stepping stone between the current monolith 
+* This will also prove to be a stepping stone between the current monolith 
   and a probable future microservice if Sysop squad truly expands.
   
 ## Consequences

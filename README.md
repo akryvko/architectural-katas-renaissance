@@ -13,6 +13,8 @@ We also looked at the issues which the team is facing currently ([Existing probl
 
 Having done this analysis, we tried to identify components that could serve our user stories, coming up with [Actor Actions Diagram](diagrams/1_actor_action.md).
 We then tried to club some components, and tried to come up with a domain driven coarse grained service diagram with user interface interaction [diagram]. [Use case diagrams](diagrams/3_use_case_diagram.md) for each of our main actors also helped us to see how these would be used, and if each of these service provide the non-functional requirements for the use cases it supports. We also defined interactions between components [diagram] to check the if the level of granularity is not too much. 
+
+This above lead us to chose **Service Based Architecture**. The reasoning for this can be found [here](adr/2021_04_30_1_service_oriented_architecture.md).
 Having done this, we planned the final deployment and depict it in the [deployment diagram].
 
 Now, we had an idea of what our preferable end sytem looked like. What was left was to think about how we would achieve that stage. We looked at all the current cmponents and database to come with a proposal for the migration. Key points we considered during this was that we would want to solve problems as soon as possible. All this was highlighted in our [Migration Plan]
