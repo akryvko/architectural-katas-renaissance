@@ -2,7 +2,6 @@
 ## Status
 Proposed
 ## Context
-![workflow](../assets/ticket_worklfow.puml) 
 * There is a certain [workflow](../assets/ticket_worklfow.puml) associated with tickets. 
 * This workflow has many decision points. 
 * It can also evolve over time.
