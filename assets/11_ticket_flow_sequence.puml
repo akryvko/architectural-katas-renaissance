@@ -1,0 +1,61 @@
+@startuml Ticket Sequence
+
+actor Customer as user
+actor Expert as expert
+actor Manager as manager
+
+participant "Ticket Workflow" as ticketWf <<engine>>
+participant "Ticket" as ticketSvc <<service>>
+participant "Ticket Assignemnt" as ticketAssign <<service>>
+participant "Notification" as notificationSvc <<service>>
+participant "Survey" as surveySvc <<service>>
+
+user --> ticketWf :create ticked
+ticketWf -> ticketSvc: new(ticket)
+ticketWf -> ticketWf: state = CREATED
+ticketWf --> ticketAssign: assign ticket
+
+activate ticketAssign
+alt expert not found
+ticketWf <-- ticketAssign: no available experts
+ticketWf --> notificationSvc: notify manager
+ticketWf -> ticketWf: state = ESCALATED
+end
+
+ticketWf <-- ticketAssign: expert found
+deactivate ticketAssign
+ticketWf --> notificationSvc: notify expert
+ticketWf -> ticketWf: state = WAIT_FOR_EXPERT
+
+...
+expert --> ticketWf: accept ticket
+ticketWf -> ticketWf: state = ASSIGNED
+
+...
+
+alt deadline
+ticketWf <- ticketWf: ticket deadline reached
+ticketWf --> notificationSvc: notify manager
+ticketWf -> ticketWf: state = ESCALATED
+end
+
+|||
+
+expert --> ticketWf: complete ticket
+ticketWf -> ticketWf: state = COMPLETED
+
+ticketWf --> surveySvc: create survey
+...
+user --> surveySvc: complete survey
+surveySvc --> ticketWf: survey completed
+ticketWf -> ticketWf: state = CLOSED
+
+...
+
+== Manager Intervention ==
+
+manager --> ticketWf: set state
+ticketWf -> ticketWf: state = CREATED|...|CLOSED
+
+
+@enduml
