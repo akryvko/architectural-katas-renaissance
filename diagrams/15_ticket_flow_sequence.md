@@ -1,2 +1,2 @@
-High Level Ticket Flow Sequence
+# Ticket Flow Sequence Diagram
 ![ticket flow seq](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/akryvko/architectural-katas-renaissance/master/assets/11_ticket_flow_sequence.puml?v=1)

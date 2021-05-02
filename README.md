@@ -27,21 +27,27 @@ Now, we had an idea of what our preferable end sytem looked like. What was left 
 
 [Actor Actions Diagram](diagrams/1_actor_action.md)
 
+[Use Case Diagram for Actors](diagrams/3_use_case_diagram.md)
+
 # Architectural Decision Records
 
 [Incremental onboarding of the new system](adr/2021_04_26_1_incremental_onboarding.md)
 
+[Use of service based architecture](adr/2021_04_30_1_service_oriented_architecture.md) 
+
 [Separated data warehouse for reporting](adr/2021_04_27_1_separated_warehouse.md)
+
+[Separate workflow manager for ticket](adr/2021_04_30_2_ticket_workflow_manager.md)
 
 [Use 3d party BI tool for reporting](adr/2021_04_27_2__bi_tool.md)
 
 [Use 3d party Knowledge Base tool](adr/2021_04_28_1_kb_tool.md)
 
-[Cloud based deployment](adr/2021_05_01_cloud_provider.md)
+[Cloud-based deployment](adr/2021_05_01_cloud_provider.md)
 
 # Logical view
 
-Links to component diagrams goes here
+[Ticket Flow Sequence Diagram](diagrams/15_ticket_flow_sequence.md)
 
 # Deployment view
 
