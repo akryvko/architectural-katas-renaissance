@@ -37,6 +37,7 @@ Referring to the available architectural principles and a comparison between the
 shows us that we have two candidates that fulfil the above requirement : 
 *service based* and *microservice architecture*.
 ![SBA](../assets/7_architecture_style_comparison.png)
+Image source: [Software Architecture Fundamentals, Second Edition Neal Ford, Mark Richards](https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491998991/9781491998991-video317001?autoplay=false)
 
 Both Microservice architecture and Service based architecture give us similar architectural benefits.
 However, we decided to chose Service based architecture because: 
