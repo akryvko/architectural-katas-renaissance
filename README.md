@@ -25,9 +25,9 @@ Now, we knew what our preferable end sytem looked like. What was left was to thi
 
 [Software system characteristics](docs/system_characteristics.md)
 
-[Actor Actions Diagram](diagrams/1_actor_action.md)
+[Actor actions diagram](diagrams/1_actor_action.md)
 
-[Use Case Diagram for Actors](diagrams/3_use_case_diagram.md)
+[Use case diagram for actors](diagrams/3_use_case_diagram.md)
 
 # Architectural Decision Records
 
@@ -47,7 +47,13 @@ Now, we knew what our preferable end sytem looked like. What was left was to thi
 
 # Logical view
 
-[Ticket Flow Sequence Diagram](diagrams/15_ticket_flow_sequence.md)
+[Components](diagrams/30_components.md)
+
+[Ticket flow components](diagrams/40_ticket_flow_components.md)
+
+[Ticket flow sequence diagram](diagrams/15_ticket_flow_sequence.md)
+
+[UI <--> components diagram](diagrams/50_ui_components.md)
 
 # Deployment view
 
