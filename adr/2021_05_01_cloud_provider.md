@@ -13,6 +13,7 @@ We tolerate multi-tenancy and other implications of cloud based solutions.
 * We are getting cost-efficient and stable infrastructure platform
 * Developers and other teams have access to computing resources in few clicks
 * Utilize secured solutions from well known provider
+* New CI/CD pipelines will be created accordingly for all the services
 
 
 ![aws](https://jsconsulting.services/wp-content/uploads/2018/05/AWS-Logo-small.jpg)
