@@ -9,7 +9,7 @@ Proposed
 * Analytics needs to be done on the current workflow state to identify pain points and improve it.
 * It is important that data doesnt get lost between these different stages of the workflow
 ## Decision
-We need a worflow manager with the following properties:
+We need a worflow manager (orchestrator) with the following properties:
 - state persistence
 - timers and delays
 - long running operations support
