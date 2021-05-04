@@ -1,6 +1,6 @@
 # Separated data warehouse for reporting
 ## Status
-Proposed
+Accepted
 ##Context
 In the  current solution the same database is used for operational activities and for report generation. We want to change this because:
 * It is hard to change the data structure, since it has multiple dependencies.

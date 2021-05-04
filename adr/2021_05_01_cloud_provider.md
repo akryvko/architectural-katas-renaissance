@@ -1,6 +1,6 @@
 # Cloud based deployment
 ## Status
-Proposed
+Accepted
 ## Context
 We are about to develop and spin-up numerous new system components. Selected architecture style - service based architecture - implies that there will be multiple deployment units. The solution is designed for horizontal scalability, so we want to utilize such features as load balancing and load-based scaling. Also we would like to use some managed database solutions.
 We tolerate multi-tenancy and other implications of cloud based solutions.

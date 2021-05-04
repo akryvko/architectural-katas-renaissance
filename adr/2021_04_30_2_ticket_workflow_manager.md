@@ -1,6 +1,6 @@
 # Need of a separate workflow manager for ticket workflow
 ## Status
-Proposed
+Accepted
 ## Context
 * There is a certain [workflow](../diagrams/10_ticket_workflow.md) associated with tickets. 
 * This workflow has many decision points. 
