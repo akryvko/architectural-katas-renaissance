@@ -56,3 +56,5 @@ Now, we knew what our preferable end system looks like. What was left was to thi
 # Deployment view
 
 [Deployment diagram](diagrams/60_deployment.md)
+
+[Migration Plan](docs/migration_plan.md)
