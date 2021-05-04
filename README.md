@@ -6,7 +6,7 @@ We have to make architectural decisions in our daily work and want to be better 
 ![team](./assets/r_team.png?v=4)
 
 # Narrative
-As the new Sysop Squads Software Architects, we have been presented with a system, that is currently live and serving real users. This system has certain properties and certian problems. Our job is to help solve those problems in the best way possible.
+As the new Sysop Squads Software Architects, we have been presented with a system, that is currently live and serving real users. This system has certain properties and certain problems. Our job is to help solve those problems in the best way possible.
 
 To do this we first found what is expected out of the system, who will use it and for what. We created [User stories](docs/user_stories.md). 
 We also looked at the issues which the team is facing currently ([Existing problems](./docs/problems.md)). We then identified the architectural requirements for the system ([Software system characteristics](docs/system_characteristics.md)).
@@ -17,7 +17,7 @@ We then reiterated to club some components, and came up with a domain driven ser
 This led us to chose **Service Based Architecture**. The reasoning for this can be found [here](adr/2021_04_30_1_service_oriented_architecture.md).
 Having done this, we planned the final deployment and depicted it in the [deployment diagram](diagrams/60_deployment.md).
 
-Now, we knew what our preferable end sytem looked like. What was left was to think about how we would achieve that stage. We looked at all the current components and database to come with a proposal for the migration. Key points we considered during this was that we would want to solve problems as soon as possible. All this was highlighted in our [Migration Plan]
+Now, we knew what our preferable end system looked like. What was left was to think about how we would achieve that stage. We looked at all the current components and database to come with a proposal for the migration. Key points we considered during this was that we would want to solve problems as soon as possible. All this was highlighted in our [Migration Plan](docs/migration_plan.md)
 
 # Analysis
 
