@@ -17,7 +17,7 @@ We then reiterated to club some components, and came up with a domain driven ser
 This led us to chose **Service Based Architecture**. The reasoning for this can be found [here](adr/2021_04_30_1_service_oriented_architecture.md).
 Having done this, we planned the final deployment and depicted it in the [deployment diagram](diagrams/60_deployment.md).
 
-Now, we knew what our preferable end system looked like. What was left was to think about how we would achieve that stage. We looked at all the current components and database to come with a proposal for the migration. Key points we considered during this was that we would want to solve problems as soon as possible. All this was highlighted in our [Migration Plan](docs/migration_plan.md)
+Now, we knew what our preferable end system looked like. What was left was to think about how we would achieve that stage. We looked at all the current components and database to come with a proposal for the migration. Key points we considered during this was that we would want to solve problems as soon as possible. All this was highlighted in our [Migration Plan](docs/migration_plan.md).
 
 # Analysis
 
