@@ -31,7 +31,7 @@ Now, we knew what our preferable end system looks like. What was left was to thi
 
 # Architectural Decision Records
 
-[Use of service based architecture](adr/2021_04_30_1_service_oriented_architecture.md) 
+[Use of service based architecture](adr/2021_04_30_1_service_based_architecture.md) 
 
 [Separated data warehouse for reporting](adr/2021_04_27_1_separated_warehouse.md)
 
